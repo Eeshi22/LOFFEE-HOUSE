@@ -1,0 +1,118 @@
+﻿/*
+ * Created by SharpDevelop.
+ * User: KEESHIA
+ * Date: 15 Apr 2024
+ * Time: 9:30 pm
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+namespace BSCS1B_RONO_WindowsForm
+{
+	partial class MainForm
+	{
+		/// <summary>
+		/// Designer variable used to keep track of non-visual components.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
+		
+		/// <summary>
+		/// Disposes resources used by the form.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing) {
+				if (components != null) {
+					components.Dispose();
+				}
+			}
+			base.Dispose(disposing);
+		}
+		
+		/// <summary>
+		/// This method is required for Windows Forms designer support.
+		/// Do not change the method contents inside the source code editor. The Forms designer might
+		/// not be able to load this method if it was changed manually.
+		/// </summary>
+		private void InitializeComponent()
+		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.comeIn = new System.Windows.Forms.Button();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.pictureBox1.Location = new System.Drawing.Point(-50, -2);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(819, 382);
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
+			// 
+			// label1
+			// 
+			this.label1.BackColor = System.Drawing.Color.Transparent;
+			this.label1.Font = new System.Drawing.Font("Mistral", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Linen;
+			this.label1.Location = new System.Drawing.Point(276, 134);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(169, 23);
+			this.label1.TabIndex = 2;
+			this.label1.Text = "~LOFFEE HOUSE~";
+			this.label1.Click += new System.EventHandler(this.Label1Click);
+			// 
+			// label6
+			// 
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
+			this.label6.Location = new System.Drawing.Point(562, 9);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(16, 19);
+			this.label6.TabIndex = 13;
+			this.label6.Text = "X";
+			this.label6.Click += new System.EventHandler(this.Label6Click);
+			// 
+			// comeIn
+			// 
+			this.comeIn.BackColor = System.Drawing.Color.SaddleBrown;
+			this.comeIn.Font = new System.Drawing.Font("Modern No. 20", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comeIn.ForeColor = System.Drawing.Color.Snow;
+			this.comeIn.Location = new System.Drawing.Point(316, 223);
+			this.comeIn.Name = "comeIn";
+			this.comeIn.Size = new System.Drawing.Size(75, 23);
+			this.comeIn.TabIndex = 14;
+			this.comeIn.Text = "Come In!";
+			this.comeIn.UseVisualStyleBackColor = false;
+			this.comeIn.Click += new System.EventHandler(this.Button1Click);
+			// 
+			// MainForm
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.ClientSize = new System.Drawing.Size(590, 340);
+			this.Controls.Add(this.comeIn);
+			this.Controls.Add(this.label6);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.pictureBox1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Name = "MainForm";
+			this.Text = "BSCS1B_RONO_WindowsForm";
+			this.Load += new System.EventHandler(this.MainFormLoad);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.ResumeLayout(false);
+		}
+		private System.Windows.Forms.Button comeIn;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.PictureBox pictureBox1;
+	}
+}

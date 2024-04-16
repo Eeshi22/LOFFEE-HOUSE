@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace BSCS1B_RONO_WindowsForm
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		public MainForm()
+		{
+			InitializeComponent();
+			
+		}
+		
+		void MainFormLoad(object sender, EventArgs e){	
+		}
+		
+		void Label1Click(object sender, EventArgs e){
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			Form1 sOne = new Form1();
+			sOne.Show();
+			this.Hide();
+		}
+		
+		void Label6Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+	}
+}
